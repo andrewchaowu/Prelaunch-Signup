@@ -143,8 +143,8 @@ Then /^I should be signed out$/ do
   page.should_not have_content "Logout"
 end
 
-Then /^I see an unconfirmed account message$/ do
-  page.should have_content "You have to confirm your account before continuing."
+Then /^I should see an invalid email message$/ do
+  page.should have_content "Emailis invalid"
 end
 
 Then /^I see a successful sign in message$/ do
